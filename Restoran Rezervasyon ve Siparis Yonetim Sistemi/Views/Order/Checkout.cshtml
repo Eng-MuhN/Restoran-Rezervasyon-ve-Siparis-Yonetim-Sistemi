@@ -1,0 +1,159 @@
+﻿@{
+    ViewBag.Title = "Sipariş Ver";
+}
+
+<section class="py-5">
+    <div class="order-card shadow-lg">
+        <form action="/Order/Checkout" method="post">
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger m-4 mb-0" role="alert">
+                    @ViewBag.Error
+                </div>
+            }
+
+            @if (ViewBag.Success != null)
+            {
+                <div class="alert alert-success m-4 mb-0" role="alert">
+                    @ViewBag.Success
+                </div>
+            }
+
+            <!-- ÜST BÖLÜM: Sipariş Özeti + Teslimat Adresi -->
+            <div class="order-section p-4 p-md-5">
+                <div class="row g-4">
+
+                    <!-- Sol: Sipariş Özeti -->
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="fw-bold mb-0">Sipariş Özeti</h4>
+                            <a href="/Order/Cart" class="btn btn-outline-danger btn-sm">
+                                Sepeti Düzenle
+                            </a>
+                        </div>
+
+                        <!-- TODO: Backend team will replace these sample rows with a foreach loop from Session/DB -->
+                        <div class="order-summary-box p-3 rounded-3">
+                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom border-secondary">
+                                <div>
+                                    <h6 class="mb-0 text-white">Adana Kebap</h6>
+                                    <small class="text-muted">Adet: 1</small>
+                                </div>
+                                <span class="fw-bold">350 ₺</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom border-secondary">
+                                <div>
+                                    <h6 class="mb-0 text-white">Künefe</h6>
+                                    <small class="text-muted">Adet: 1</small>
+                                </div>
+                                <span class="fw-bold">180 ₺</span>
+                            </div>
+
+                            <div class="d-flex justify-content-between pt-3 text-muted small">
+                                <span>Ara Toplam</span>
+                                <span>530 ₺</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-1 text-muted small">
+                                <span>Teslimat Ücreti</span>
+                                <span class="text-success">Ücretsiz</span>
+                            </div>
+                            <div class="d-flex justify-content-between pt-2 mt-2 border-top border-secondary fs-5 fw-bold text-white">
+                                <span>Toplam</span>
+                                <span class="text-danger">530 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sağ: Teslimat Adresi ve İletişim -->
+                    <div class="col-12 col-lg-6">
+                        <h4 class="fw-bold mb-3">Teslimat Bilgileri</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Ad Soyad</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="fullName"
+                                       name="fullName"
+                                       placeholder="Adınız Soyadınız"
+                                       required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Telefon</label>
+                                <input type="tel"
+                                       class="form-control"
+                                       id="phone"
+                                       name="phone"
+                                       placeholder="05XX XXX XX XX"
+                                       required />
+                            </div>
+                            <div class="col-12">
+                                <label for="address" class="form-label">Teslimat Adresi</label>
+                                <textarea class="form-control"
+                                          id="address"
+                                          name="address"
+                                          rows="2"
+                                          placeholder="Mahalle, sokak, bina no, daire no..."
+                                          required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="orderNote" class="form-label">Sipariş Notu (İsteğe Bağlı)</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="orderNote"
+                                       name="orderNote"
+                                       placeholder="Örn: Zile basmayın, acısız olsun" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ALT BÖLÜM: Ödeme Yöntemi -->
+            <div class="p-4 p-md-5">
+                <h4 class="fw-bold mb-3">Ödeme Yöntemi</h4>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-12 col-md-4">
+                        <label class="payment-option w-100">
+                            <input type="radio" name="paymentMethod" value="Kapıda Nakit" checked />
+                            <div class="payment-option-body">
+                                <span class="fw-bold d-block text-white">Kapıda Nakit</span>
+                                <small class="text-muted">Teslimat sırasında nakit ödeyin</small>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <label class="payment-option w-100">
+                            <input type="radio" name="paymentMethod" value="Kapıda Kredi / Banka Kartı" />
+                            <div class="payment-option-body">
+                                <span class="fw-bold d-block text-white">Kapıda Kart</span>
+                                <small class="text-muted">POS cihazı ile kapıda ödeyin</small>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <label class="payment-option w-100">
+                            <input type="radio" name="paymentMethod" value="Online Kredi Kartı" />
+                            <div class="payment-option-body">
+                                <span class="fw-bold d-block text-white">Online Kart (Visa / Mastercard)</span>
+                                <small class="text-muted">Güvenli online ödeme</small>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-danger btn-lg py-3 fw-bold">
+                        Siparişi Onayla
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
