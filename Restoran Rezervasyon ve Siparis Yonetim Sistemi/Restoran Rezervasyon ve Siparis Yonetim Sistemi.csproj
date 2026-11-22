@@ -146,6 +146,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\adana_kebab.jpeg" />
+    <Content Include="images\kunefe.jpeg" />
+    <Content Include="images\logo.jpeg" />
+    <Content Include="images\mercimek_corbasi.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

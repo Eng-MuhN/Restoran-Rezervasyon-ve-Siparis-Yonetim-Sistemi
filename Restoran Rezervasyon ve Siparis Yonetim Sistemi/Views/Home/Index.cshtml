@@ -1,33 +1,62 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+   ViewBag.Title = "Home Page";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+<section id="about" class="row align-items-center py-5">
+    <div class="col-md-5">
+        <p class="about-words">Taze.<br />Lezzetli.<br />Samimi.</p>
+    </div>
+    <div class="col-md-7">
+        <h2>Anadolu'nun lezzetleri sofranızda</h2>
+        <p class="text-muted">
+            Geleneksel tarifleri en taze malzemelerle hazırlıyoruz.
+            İster masanızı ayırtın, ister online sipariş verin.
+        </p>
+    </div>
+</section>
+
+<section id="specialties" class="py-5">
+    <h2 class="text-center">Özel Lezzetlerimiz</h2>
+    <p class="text-center text-muted mb-4">Şefimizin en sevilen tabakları</p>
 
     <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="~/images/adana_kebab.jpeg" class="card-img-top" alt="Adana Kebap" />
+                <div class="card-body">
+                    <h5 class="card-title">Adana Kebap</h5>
+                    <p class="card-text text-muted">Közlenmiş biber ve domates ile</p>
+                    <p class="fw-bold">350 ₺</p>
+                    <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="~/images/mercimek_corbasi.jpeg" class="card-img-top" alt="Mercimek Çorbası" />
+                <div class="card-body">
+                    <h5 class="card-title">Mercimek Çorbası</h5>
+                    <p class="card-text text-muted">Günlük taze, limon ile servis</p>
+                    <p class="fw-bold">120 ₺</p>
+                    <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="~/images/kunefe.jpeg" class="card-img-top" alt="Künefe" />
+                <div class="card-body">
+                    <h5 class="card-title">Künefe</h5>
+                    <p class="card-text text-muted">Antep fıstıklı, sıcak servis</p>
+                    <p class="fw-bold">180 ₺</p>
+                    <a href="#" class="btn btn-danger">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
+</section>
+
+
+
