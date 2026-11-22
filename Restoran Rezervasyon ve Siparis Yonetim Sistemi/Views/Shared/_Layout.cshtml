@@ -1,36 +1,162 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Kebabçı Necip</title>
+    <link rel="icon" href="~/images/logo.png" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+
+                <!-- Logo ve restoran adı -->
+                <a class="navbar-brand restaurant-brand"
+                   href="/Home/Index">
+
+                    <img src="~/images/logo.jpeg"
+                         alt="Kebabçı Necip"
+                         class="restaurant-logo" />
+
+                    <span>Kebabçı Necip</span>
+                </a>
+
+                <!-- Küçük ekranlarda menüyü açar -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#restaurantNavbar"
+                        aria-controls="restaurantNavbar"
+                        aria-expanded="false"
+                        aria-label="Menüyü aç veya kapat">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse"
+                     id="restaurantNavbar">
+
+                    <!-- Orta bölüm -->
+                    <ul class="navbar-nav mx-auto restaurant-links">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="/Home/Index#about">
+                                Hakkımızda
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="/Menu/Index">
+                                Menü
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="/Home/Index#iletisim">
+                                İletişim
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Sağ bölüm -->
+                    <div class="restaurant-actions">
+                        <a class="header-button header-button-outline"
+                           href="/Reservation/Index">
+                            Rezervasyon
+                        </a>
+
+                        <a class="header-button header-button-outline"
+                           href="/Menu/Index">
+                            Sipariş Ver
+                        </a>
+
+                        <a class="header-account"
+                           href="/Account/Login">
+                            Giriş Yap
+                        </a>
+
+                        <a class="header-account"
+                           href="/Order/Cart">
+                            Sepet
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container page-content">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="site-footer">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
+            <div class="row g-4">
+
+                <!-- Restoran tanıtımı -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="footer-brand" href="/Home/Index">
+                        Kebabçı Necip
+                    </a>
+
+                    <p class="footer-description">
+                        Ateşin lezzeti, ustanın emeği.
+                        Geleneksel kebap lezzetlerini sofranıza taşıyoruz.
+                    </p>
+
+                    <p class="footer-social-label">
+                        Bizi sosyal medyada takip edin.
+                    </p>
+
+                    <!-- Gerçek hesap adresleri eklenince bağlantı yapılacak -->
+                    <div class="footer-socials">
+                        <span class="footer-social">Instagram</span>
+                        <span class="footer-social">Facebook</span>
+                    </div>
+                </div>
+
+                <!-- İletişim -->
+                <div class="col-12 col-md-6 col-lg-4" id="iletisim">
+                    <h2 class="footer-heading">İletişim</h2>
+
+                    <ul class="footer-contact">
+                        <li>Adres: Restoran adresi eklenecek</li>
+                        <li>Telefon: Telefon numarası eklenecek</li>
+                        <li>E-posta: E-posta adresi eklenecek</li>
+                    </ul>
+                </div>
+
+                <!-- Ödeme yöntemleri -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2 class="footer-heading">Ödeme Yöntemleri</h2>
+
+                    <!-- Gerçekte kabul edilen yöntemlere göre düzenleyin -->
+                    <div class="footer-payments">
+                        <span class="footer-payment">Nakit</span>
+                        <span class="footer-payment">Visa</span>
+                        <span class="footer-payment">Mastercard</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Alt telif satırı -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; @DateTime.Now.Year Kebabçı Necip.
+                    Tüm hakları saklıdır.
+                </p>
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
