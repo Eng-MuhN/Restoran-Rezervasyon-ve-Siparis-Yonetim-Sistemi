@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Kutu İçecek</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="260" r="208" fill="#b92f2c" opacity="0.06"/><ellipse cx="256" cy="390" rx="188" ry="25" fill="#161211" opacity="0.08"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="385" rx="84" ry="20" fill="#241a18" opacity="0.18"/><path d="M188 150q68-16 136 0l-12 218q-56 23-112 0Z" fill="#bd342d"/><ellipse cx="256" cy="151" rx="68" ry="16" fill="#ded5c8"/><ellipse cx="256" cy="153" rx="50" ry="9" fill="#9eaaa1"/><path d="M198 190h116m-109 20h102" stroke="#f1d3ae" stroke-width="7" opacity="0.8"/><circle cx="256" cy="279" r="37" fill="#f3e8d5"/><path d="M240 282q16-28 32 0-16 27-32 0Z" fill="#bd342d"/></g>
+</svg>

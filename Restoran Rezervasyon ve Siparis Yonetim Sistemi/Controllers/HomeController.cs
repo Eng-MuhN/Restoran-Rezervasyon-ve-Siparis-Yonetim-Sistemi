@@ -26,5 +26,6 @@ namespace Restoran_Rezervasyon_ve_Siparis_Yonetim_Sistemi.Controllers
 
             return View();
         }
+        
     }
 }

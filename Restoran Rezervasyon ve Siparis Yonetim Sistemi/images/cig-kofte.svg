@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Çiğ Köfte</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="306" rx="154" ry="87" fill="#f5eee5"/><ellipse cx="256" cy="293" rx="142" ry="75" fill="#d8cbbd"/>
+<g fill="#a7392d"><path d="M151 289q22-42 46 0-22 42-46 0Z"/><path d="M207 272q22-42 46 0-22 42-46 0Z"/><path d="M267 292q22-42 46 0-22 42-46 0Z"/><path d="M323 270q22-42 46 0-22 42-46 0Z"/></g>
+<path d="M122 353c33-29 61-22 76 6-29 31-56 30-76-6Zm199 1c33-29 61-22 76 6-29 31-56 30-76-6Z" fill="#6f9145"/></g>
+</svg>

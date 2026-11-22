@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Urfa Dürüm</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><g transform="rotate(-17 256 275)">
+  <path d="M112 224q17-28 48-18l218 77q22 8 13 32l-12 35q-7 23-31 15L127 287q-30-9-22-37Z" fill="#e3bf82"/>
+  <path d="M132 237q8-13 23-9l205 72q10 4 6 15l-9 25q-3 10-15 6l-204-71q-18-6-12-22Z" fill="#a75c39"/>
+  <path d="M148 249l42 15m20-4 42 15m20-4 42 15m20-5 42 15" stroke="#eab761" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="119" cy="249" rx="25" ry="36" fill="#f2d99f"/><ellipse cx="119" cy="249" rx="15" ry="25" fill="#a75c39"/>
+  <circle cx="116" cy="240" r="4" fill="#729247"/><circle cx="124" cy="254" r="4" fill="#c83930"/>
+</g></g>
+</svg>

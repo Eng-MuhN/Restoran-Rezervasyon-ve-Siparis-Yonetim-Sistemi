@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Katmer</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="323" rx="165" ry="64" fill="#e4d6c3"/><path d="M134 275l122-62 122 62-122 72Z" fill="#e0b269"/><path d="M163 273l93-45 92 45-92 55Z" fill="#f0d18b"/><path d="M192 276l64-31 64 31-64 39Z" fill="#cf984a"/><path d="M256 214v132m-119-71 119 70m122-70-122 70" stroke="#f4dfac" stroke-width="7" opacity="0.8"/><circle cx="256" cy="275" r="9" fill="#98a14b"/></g>
+</svg>
