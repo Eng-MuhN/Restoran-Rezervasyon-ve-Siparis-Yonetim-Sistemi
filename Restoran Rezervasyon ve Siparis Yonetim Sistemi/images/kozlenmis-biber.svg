@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Közlenmiş Biber</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="333" rx="170" ry="62" fill="#e4d7c5"/>
+<path d="M124 289c3-55 57-78 91-33 10 14 11 37 4 63-41 25-79 17-95-30Z" fill="#6f8e3d"/><path d="M220 279c4-58 55-79 89-35 11 15 11 37 3 65-39 23-77 16-92-30Z" fill="#bd4936"/><path d="M314 291c3-53 49-70 78-32 12 16 10 37 2 58-34 22-68 15-80-26Z" fill="#6b8539"/>
+<path d="M147 275q18 12 29 35m73-45q15 17 22 41m68-34q14 15 18 35" fill="none" stroke="#35341f" stroke-width="6" stroke-linecap="round"/>
+<path d="M136 235l12-13m87 5 11-14m90 12 12-14" stroke="#759446" stroke-width="7" stroke-linecap="round"/></g>
+</svg>

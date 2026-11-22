@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Çoban Salata</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="316" rx="170" ry="84" fill="#f1e8dc"/><ellipse cx="256" cy="294" rx="153" ry="72" fill="#60904c"/><g fill="#83a34e"><path d="M134 292q24-57 57-5-18 47-57 5Z"/><path d="M218 269q26-55 60-2-20 46-60 2Z"/><path d="M304 294q20-57 57-7-17 48-57 7Z"/></g><g fill="#cf4936"><circle cx="180" cy="296" r="21"/><circle cx="265" cy="310" r="19"/><circle cx="343" cy="275" r="18"/></g><g fill="#f3d082"><circle cx="218" cy="287" r="12"/><circle cx="308" cy="300" r="12"/></g><path d="M155 325q27-20 46 0m98 1q27-20 46 0" fill="none" stroke="#e8e0d2" stroke-width="8" stroke-linecap="round"/></g>
+</svg>

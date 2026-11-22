@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Künefe</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="323" rx="167" ry="67" fill="#e3d4c1"/><ellipse cx="256" cy="291" rx="148" ry="71" fill="#d48b36"/><ellipse cx="256" cy="284" rx="128" ry="54" fill="#e8ac4e"/><path d="M157 280q53-44 102 0t98 0m-179 25q58-42 113 0t84 0" fill="none" stroke="#f4d47c" stroke-width="11" stroke-linecap="round"/><circle cx="256" cy="278" r="17" fill="#9d3329"/><path d="M243 278q13-24 26 0-13 23-26 0Z" fill="#a7a94f"/></g>
+</svg>

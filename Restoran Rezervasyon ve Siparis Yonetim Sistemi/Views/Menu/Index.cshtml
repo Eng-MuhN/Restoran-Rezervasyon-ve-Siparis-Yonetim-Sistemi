@@ -1,0 +1,140 @@
+﻿
+
+@{
+    ViewBag.Title = "Menümüz";
+
+    var categories = new[]
+    {
+        new { Name = "Kebaplar", Id = "kebaplar" },
+        new { Name = "Dürümler", Id = "durumler" },
+        new { Name = "Pide & Lahmacun", Id = "pide-lahmacun" },
+        new { Name = "Başlangıç & Salata", Id = "baslangic-salata" },
+        new { Name = "Tatlılar", Id = "tatlilar" },
+        new { Name = "İçecekler", Id = "icecekler" }
+    };
+
+    var menuItems = new[]
+    {
+        new { Category = "Kebaplar", Name = "Adana Kebap", Description = "Baharatı yerinde, köz ateşinde pişer.", Price = "400 TL", Image = "adana-kebap.svg", Label = "Usta işi" },
+        new { Category = "Kebaplar", Name = "Urfa Kebap", Description = "Yumuşak baharatıyla sade ve doyurucu.", Price = "400 TL", Image = "urfa-kebap.svg", Label = "Acısız" },
+        new { Category = "Kebaplar", Name = "Tavuk Şiş", Description = "Köz sebzelerle servis edilir.", Price = "350 TL", Image = "tavuk-sis.svg", Label = "Izgaradan" },
+        new { Category = "Kebaplar", Name = "Kuzu Şiş", Description = "Köz ateşinde pişen kuzu şiş.", Price = "600 TL", Image = "kuzu-sis.svg", Label = "Kuzu eti" },
+        new { Category = "Kebaplar", Name = "Beyti", Description = "Lavaşta sarılı, yoğurt ve sos eşliğinde.", Price = "500 TL", Image = "beyti.svg", Label = "Yoğurtlu" },
+        new { Category = "Kebaplar", Name = "Patlıcanlı Kebap", Description = "Baharatlı kebap, köz patlıcanla.", Price = "550 TL", Image = "patlicanli-kebap.svg", Label = "Köz patlıcan" },
+        new { Category = "Kebaplar", Name = "Karışık Izgara", Description = "Izgaradan seçilmiş lezzetler bir arada.", Price = "850 TL", Image = "karisik-izgara.svg", Label = "Karışık" },
+
+        new { Category = "Dürümler", Name = "Adana Dürüm", Description = "Lavaşta Adana kebap, taze yeşilliklerle.", Price = "350 TL", Image = "adana-durum.svg", Label = "Dürüm" },
+        new { Category = "Dürümler", Name = "Urfa Dürüm", Description = "Lavaşta Urfa kebap, taze yeşilliklerle.", Price = "350 TL", Image = "urfa-durum.svg", Label = "Acısız" },
+        new { Category = "Dürümler", Name = "Tavuk Dürüm", Description = "Izgara tavuk, lavaş ve taze yeşillikler.", Price = "250 TL", Image = "tavuk-durum.svg", Label = "Dürüm" },
+
+        new { Category = "Pide & Lahmacun", Name = "Lahmacun", Description = "İnce hamur, bol yeşillikle servis edilir.", Price = "160 TL", Image = "lahmacun.svg", Label = "Taş fırından" },
+        new { Category = "Pide & Lahmacun", Name = "Kaşarlı Pide", Description = "Fırından sıcak, uzayan kaşar peyniriyle.", Price = "350 TL", Image = "kasarli-pide.svg", Label = "Taş fırından" },
+        new { Category = "Pide & Lahmacun", Name = "Kıymalı Pide", Description = "Özenle hazırlanan kıymalı iç harçla.", Price = "380 TL", Image = "kiymali-pide.svg", Label = "Taş fırından" },
+        new { Category = "Pide & Lahmacun", Name = "Kuşbaşılı Pide", Description = "Kuşbaşı etli, fırından sıcak pide.", Price = "420 TL", Image = "kusbasili-pide.svg", Label = "Taş fırından" },
+
+        new { Category = "Başlangıç & Salata", Name = "Ezme", Description = "Acılı, taze ve sofraya yakışan bir başlangıç.", Price = "100 TL", Image = "ezme.svg", Label = "Meze" },
+        new { Category = "Başlangıç & Salata", Name = "Haydari", Description = "Yoğurtlu, serinletici meze.", Price = "100 TL", Image = "haydari.svg", Label = "Meze" },
+        new { Category = "Başlangıç & Salata", Name = "Közlenmiş Biber", Description = "Köz aromasıyla sofraya eşlik eder.", Price = "80 TL", Image = "kozlenmis-biber.svg", Label = "Meze" },
+        new { Category = "Başlangıç & Salata", Name = "Çiğ Köfte", Description = "Marul ve limonla servis edilir.", Price = "120 TL", Image = "cig-kofte.svg", Label = "Başlangıç" },
+        new { Category = "Başlangıç & Salata", Name = "Çoban Salata", Description = "Domates, salatalık ve yeşilliklerle.", Price = "120 TL", Image = "coban-salata.svg", Label = "Salata" },
+        new { Category = "Başlangıç & Salata", Name = "Mevsim Salata", Description = "Mevsim yeşillikleriyle taze salata.", Price = "120 TL", Image = "mevsim-salata.svg", Label = "Salata" },
+
+        new { Category = "Tatlılar", Name = "Sütlaç", Description = "Fırınlanmış, hafif sütlü tatlı.", Price = "130 TL", Image = "sutlac.svg", Label = "Tatlı" },
+        new { Category = "Tatlılar", Name = "Künefe", Description = "Sıcak servis edilen peynirli kadayıf.", Price = "220 TL", Image = "kunefe.svg", Label = "Sıcak tatlı" },
+        new { Category = "Tatlılar", Name = "Katmer", Description = "İncecik hamur, Antep fıstığı ve kaymak.", Price = "230 TL", Image = "katmer.svg", Label = "Tatlı" },
+
+        new { Category = "İçecekler", Name = "Ayran", Description = "Kebapların yanına serin bir eşlikçi.", Price = "65 TL", Image = "ayran.svg", Label = "Soğuk içecek" },
+        new { Category = "İçecekler", Name = "Şalgam", Description = "Acılı veya acısız tercih edilebilir.", Price = "65 TL", Image = "salgam.svg", Label = "Soğuk içecek" },
+        new { Category = "İçecekler", Name = "Kutu İçecek", Description = "Soğuk kutu içecek çeşitleri.", Price = "70 TL", Image = "kutu-icecek.svg", Label = "Soğuk içecek" },
+        new { Category = "İçecekler", Name = "Soda", Description = "Serinletici sade soda.", Price = "40 TL", Image = "soda.svg", Label = "Soğuk içecek" },
+        new { Category = "İçecekler", Name = "Su", Description = "Soğuk su.", Price = "20 TL", Image = "su.svg", Label = "Soğuk içecek" }
+    };
+}
+
+@section styles {
+    <link href="@Url.Content("~/Content/menu.css")" rel="stylesheet" />
+}
+
+<main class="necip-menu-page">
+    <section class="menu-hero">
+        <div class="container menu-hero-inner">
+            <div class="menu-hero-copy">
+                <p class="menu-eyebrow">USTADAN SOFRANIZA</p>
+                <h1>Menümüz</h1>
+                <p class="menu-hero-subtitle">Köz ateşinde hazırlanan lezzetleri keşfet.</p>
+                <div class="menu-hero-rule"></div>
+                <span>Kebap <i>•</i> Dürüm <i>•</i> Pide</span>
+            </div>
+            <div class="menu-hero-stamp" aria-hidden="true">
+                <span>KEBAPÇI</span>
+                <strong>NECİP</strong>
+                <small>USTA İŞİ LEZZET</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="container menu-content">
+        <div class="menu-panel">
+            <div class="menu-heading-row">
+                <div>
+                    <p class="menu-eyebrow menu-eyebrow-light">NECİP USTA'NIN MUTFAĞINDAN</p>
+                    <h2>Özenle hazırlananlar</h2>
+                </div>
+                <p class="menu-heading-note">Canın ne çektiyse, sofranda yeri var.</p>
+            </div>
+
+            <nav class="menu-categories" aria-label="Menü kategorileri">
+                @for (var i = 0; i < categories.Length; i++)
+                {
+                    <a class="menu-pill @(i == 0 ? "active" : "")" href="#@categories[i].Id">@categories[i].Name</a>
+                }
+            </nav>
+
+            @foreach (var category in categories)
+            {
+                <section class="menu-section" id="@category.Id">
+                    <div class="menu-section-heading">
+                        <h3>@category.Name</h3>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        @foreach (var item in menuItems)
+                        {
+                            if (item.Category == category.Name)
+                            {
+                                <div class="col-sm-6 col-lg-4 menu-col">
+                                    <article class="menu-card">
+                                        <div class="menu-card-photo">
+                                            <img src="@Url.Content("~/images/menu-gorseller/" + item.Image)" alt="@item.Name" loading="lazy" />
+                                            <span class="menu-card-label">@item.Label</span>
+                                        </div>
+                                        <div class="menu-card-body">
+                                            <h4>@item.Name</h4>
+                                            <p>@item.Description</p>
+                                            <div class="menu-card-bottom">
+                                                <strong>@item.Price</strong>
+                                                <span class="menu-card-plus" aria-hidden="true">+</span>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            }
+                        }
+                    </div>
+                </section>
+            }
+
+            <aside class="menu-callout">
+                <div class="menu-callout-mark" aria-hidden="true">N</div>
+                <div>
+                    <h3>Sofranda yerimiz hazır.</h3>
+                    <p>Sevdiklerinle paylaşacağın lezzetler Kebabçı Necip'te.</p>
+                </div>
+                <a href="@Url.Action("Index", "Home")" class="menu-callout-link">Ana sayfaya dön <span aria-hidden="true">→</span></a>
+            </aside>
+        </div>
+    </section>
+</main>
+
+
+

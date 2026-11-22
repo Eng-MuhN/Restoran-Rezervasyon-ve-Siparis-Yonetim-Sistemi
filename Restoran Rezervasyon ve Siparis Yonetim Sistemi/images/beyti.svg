@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Beyti</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><g transform="rotate(-11 256 282)">
+  <rect x="118" y="244" width="276" height="76" rx="38" fill="#d7a45f"/>
+  <rect x="128" y="253" width="256" height="58" rx="29" fill="#8e3c27"/>
+  <path d="M148 263c37-15 58 17 93 0s58 17 95 0" fill="none" stroke="#c97145" stroke-width="14" stroke-linecap="round"/>
+  <ellipse cx="126" cy="282" rx="19" ry="36" fill="#f1dfc0"/><ellipse cx="126" cy="282" rx="10" ry="23" fill="#8d3827"/>
+  <path d="M178 271l22 9m32-11 22 10m32-11 22 10m31-11 21 9" stroke="#3f231b" stroke-width="5" stroke-linecap="round"/>
+</g>
+<circle cx="150" cy="365" r="17" fill="#fff5e9"/><circle cx="150" cy="365" r="8" fill="#c6382d"/>
+<path d="M346 365c10-19 30-22 44-7-11 19-28 24-44 7Z" fill="#6f9145"/></g>
+</svg>

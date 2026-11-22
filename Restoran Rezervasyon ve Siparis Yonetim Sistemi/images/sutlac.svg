@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Sütlaç</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><ellipse cx="256" cy="320" rx="158" ry="63" fill="#d7c6b2"/><path d="M116 268q140 44 280 0l-21 76q-119 69-238 0Z" fill="#e8d7bf"/><ellipse cx="256" cy="269" rx="140" ry="55" fill="#f5e8d2"/><ellipse cx="256" cy="266" rx="122" ry="42" fill="#eddfc8"/><path d="M180 269q75-36 151 0" fill="none" stroke="#b85b3f" stroke-width="9" stroke-linecap="round"/><circle cx="218" cy="255" r="6" fill="#995339"/><circle cx="286" cy="279" r="6" fill="#995339"/></g>
+</svg>
