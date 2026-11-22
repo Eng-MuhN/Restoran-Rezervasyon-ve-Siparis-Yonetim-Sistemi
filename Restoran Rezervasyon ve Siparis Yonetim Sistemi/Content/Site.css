@@ -351,3 +351,71 @@ body {
 .card {
     --bs-card-bg: #262626;
 }
+/* ===== Reservation Split Card ===== */
+.reservation-card {
+    background-color: #262626;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.reservation-left {
+    background-color: #1f1f1f;
+    border-right: 1px solid #3a3a3a;
+}
+
+.reservation-welcome,
+.reservation-section {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.reservation-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+    .reservation-left {
+        border-right: none;
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
+/* ===== Order / Cart & Checkout Pages ===== */
+.order-card {
+    background-color: #262626;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.order-section {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.order-summary-box {
+    background-color: #1f1f1f;
+    border: 1px solid #3a3a3a;
+}
+
+.payment-option {
+    cursor: pointer;
+    position: relative;
+}
+    .payment-option input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+.payment-option-body {
+    background-color: #1f1f1f;
+    border: 2px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 16px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.payment-option input[type="radio"]:checked + .payment-option-body {
+    border-color: #dc3545;
+    background-color: #2c1e1e;
+}

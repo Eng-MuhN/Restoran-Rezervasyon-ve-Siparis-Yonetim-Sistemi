@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Yönetici Girişi";
+}
+
+<section class="row justify-content-center align-items-center py-5">
+    <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+        <div class="card shadow-lg border border-danger p-4">
+            <div class="card-body">
+                <div class="text-center mb-2">
+                    <span class="badge bg-danger px-3 py-2">YÖNETİCİ PANELİ</span>
+                </div>
+                <h2 class="text-center fw-bold mb-2">Admin Girişi</h2>
+                <p class="text-center text-muted mb-4">
+                    Sadece yetkili restoran yöneticileri giriş yapabilir.
+                </p>
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewBag.Error
+                    </div>
+                }
+
+                <form action="/Account/AdminLogin" method="post">
+                    <div class="mb-3">
+                        <label for="adminEmail" class="form-label">Yönetici E-posta</label>
+                        <input type="email"
+                               class="form-control"
+                               id="adminEmail"
+                               name="email"
+                               placeholder="admin@kebabci.com"
+                               required />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="adminPassword" class="form-label">Şifre</label>
+                        <input type="password"
+                               class="form-control"
+                               id="adminPassword"
+                               name="password"
+                               placeholder="Şifrenizi girin"
+                               required />
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-danger btn-lg">
+                            Yönetici Olarak Giriş Yap
+                        </button>
+                    </div>
+                </form>
+
+                <hr class="border-secondary my-3" />
+
+                <p class="text-center mb-0">
+                    <a href="/Account/Login" class="text-muted text-decoration-none small">
+                        &larr; Müşteri Girişine Dön
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
