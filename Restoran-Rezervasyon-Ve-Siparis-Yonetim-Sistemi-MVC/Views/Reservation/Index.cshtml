@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewBag.Title = "Rezervasyon";
+}
+
+<section class="py-5">
+    <div class="reservation-card shadow-lg">
+        <div class="row g-0">
+
+            <!-- SOL SÜTUN: Welcome + Görsel / Bilgi -->
+            <div class="col-12 col-lg-5 reservation-left d-flex flex-column">
+                <div class="reservation-welcome p-4 p-md-5">
+                    <span class="text-uppercase small fw-bold text-danger">Kebabçı Necip</span>
+                    <h2 class="fw-bold mt-2 mb-2">Hoş Geldiniz</h2>
+                    <p class="text-muted mb-0">
+                        Özel akşamlarınız ve sevdiklerinizle keyifli sofralar için masanızı hemen ayırtın.
+                    </p>
+                </div>
+
+                <div class="reservation-visual flex-grow-1 p-4 p-md-5 d-flex flex-column justify-content-end">
+                    <img src="~/images/adana_kebab.jpeg"
+                         alt="Kebabçı Necip"
+                         class="img-fluid rounded-3 mb-3 reservation-img" />
+                    <div class="small text-muted">
+                        <p class="mb-1"><strong class="text-white">Çalışma Saatleri:</strong> 12:00 – 23:00</p>
+                        <p class="mb-0"><strong class="text-white">Not:</strong> 10+ kişilik gruplar için lütfen telefonla ulaşın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SAĞ SÜTUN: Kişisel Bilgiler + Gün-Saat + Reserve Now -->
+            <div class="col-12 col-lg-7 reservation-right">
+                <form action="/Reservation/Index" method="post" class="h-100 d-flex flex-column">
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger m-4 mb-0" role="alert">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                    @if (ViewBag.Success != null)
+                    {
+                        <div class="alert alert-success m-4 mb-0" role="alert">
+                            @ViewBag.Success
+                        </div>
+                    }
+
+                    <!-- 1. Kişisel Bilgiler -->
+                    <div class="reservation-section p-4 p-md-5">
+                        <h5 class="fw-bold mb-3">Kişisel Bilgiler</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Ad Soyad</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="fullName"
+                                       name="fullName"
+                                       placeholder="Adınız Soyadınız"
+                                       required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Telefon</label>
+                                <input type="tel"
+                                       class="form-control"
+                                       id="phone"
+                                       name="phone"
+                                       placeholder="05XX XXX XX XX"
+                                       required />
+                            </div>
+                            <div class="col-12">
+                                <label for="notes" class="form-label">Özel Not (İsteğe Bağlı)</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="notes"
+                                       name="notes"
+                                       placeholder="Pencere kenarı, bebek sandalyesi vb." />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Gün - Saat -->
+                    <div class="reservation-section p-4 p-md-5">
+                        <h5 class="fw-bold mb-3">Gün - Saat</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="date" class="form-label">Tarih</label>
+                                <input type="date"
+                                       class="form-control"
+                                       id="date"
+                                       name="date"
+                                       min="@DateTime.Now.ToString("yyyy-MM-dd")"
+                                       required />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="time" class="form-label">Saat</label>
+                                <select class="form-select" id="time" name="time" required>
+                                    <option value="" selected disabled>Seçin</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="guestCount" class="form-label">Kişi Sayısı</label>
+                                <input type="number"
+                                       class="form-control"
+                                       id="guestCount"
+                                       name="guestCount"
+                                       min="1"
+                                       max="20"
+                                       value="2"
+                                       required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Reserve Now -->
+                    <div class="p-4 p-md-5 mt-auto d-grid">
+                        <button type="submit" class="btn btn-danger btn-lg py-3 fw-bold">
+                            Rezervasyon Yap
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

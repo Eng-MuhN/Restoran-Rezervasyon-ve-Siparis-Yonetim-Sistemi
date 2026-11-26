@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Karışık Izgara</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><g transform="rotate(-12 256 270)">
+ <path d="M111 258h289" stroke="#d4a05a" stroke-width="7" stroke-linecap="round"/>
+ <rect x="148" y="230" width="46" height="57" rx="12" fill="#8e3e29"/><path d="M155 246h30m-30 20h30" stroke="#43251c" stroke-width="5"/>
+ <rect x="207" y="230" width="46" height="57" rx="12" fill="#d6a45e"/><path d="M214 246h30m-30 20h30" stroke="#76502d" stroke-width="5"/>
+ <rect x="266" y="230" width="46" height="57" rx="12" fill="#98442c"/><path d="M273 246h30m-30 20h30" stroke="#43251c" stroke-width="5"/>
+ <rect x="325" y="230" width="46" height="57" rx="12" fill="#c88d4a"/><path d="M332 246h30m-30 20h30" stroke="#76502d" stroke-width="5"/>
+</g>
+<path d="M143 350c18-23 41-21 54 1-17 20-38 22-54-1Zm201 0c18-23 41-21 54 1-17 20-38 22-54-1Z" fill="#6d9244"/></g>
+</svg>

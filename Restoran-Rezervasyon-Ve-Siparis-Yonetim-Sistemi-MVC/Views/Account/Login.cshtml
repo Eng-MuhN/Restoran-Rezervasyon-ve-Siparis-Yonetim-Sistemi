@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Giriş Yap";
+}
+
+<section class="row justify-content-center align-items-center py-5">
+    <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+        <div class="card shadow-lg border-0 p-4">
+            <div class="card-body">
+                <h2 class="text-center fw-bold mb-2">Giriş Yap</h2>
+                <p class="text-center text-muted mb-4">
+                    Rezervasyon ve siparişleriniz için hesabınıza giriş yapın.
+                </p>
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewBag.Error
+                    </div>
+                }
+
+                <form action="/Account/Login" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-posta Adresi</label>
+                        <input type="email"
+                               class="form-control"
+                               id="email"
+                               name="email"
+                               placeholder="ornek@mail.com"
+                               required />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Şifre</label>
+                        <input type="password"
+                               class="form-control"
+                               id="password"
+                               name="password"
+                               placeholder="Şifrenizi girin"
+                               required />
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-danger btn-lg">
+                            Giriş Yap
+                        </button>
+                    </div>
+                </form>
+
+                <p class="text-center text-muted mb-0">
+                    Hesabınız yok mu?
+                    <a href="/Account/Register" class="text-danger text-decoration-none fw-semibold">
+                        Kayıt Ol
+                    </a>
+                </p>
+
+                <hr class="border-secondary my-3" />
+
+                <p class="text-center mb-0">
+                    <a href="/Account/AdminLogin" class="text-muted text-decoration-none small">
+                        Yönetici Girişi &rarr;
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

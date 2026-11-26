@@ -120,7 +120,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -146,6 +150,38 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\adana-durum.svg" />
+    <Content Include="images\adana-kebap.svg" />
+    <Content Include="images\adana_kebab.jpeg" />
+    <Content Include="images\ayran.svg" />
+    <Content Include="images\beyti.svg" />
+    <Content Include="images\cig-kofte.svg" />
+    <Content Include="images\coban-salata.svg" />
+    <Content Include="images\ezme.svg" />
+    <Content Include="images\haydari.svg" />
+    <Content Include="images\karisik-izgara.svg" />
+    <Content Include="images\kasarli-pide.svg" />
+    <Content Include="images\katmer.svg" />
+    <Content Include="images\kiymali-pide.svg" />
+    <Content Include="images\kozlenmis-biber.svg" />
+    <Content Include="images\kunefe.jpeg" />
+    <Content Include="images\kunefe.svg" />
+    <Content Include="images\kusbasili-pide.svg" />
+    <Content Include="images\kutu-icecek.svg" />
+    <Content Include="images\kuzu-sis.svg" />
+    <Content Include="images\lahmacun.svg" />
+    <Content Include="images\logo.jpeg" />
+    <Content Include="images\mercimek_corbasi.jpeg" />
+    <Content Include="images\mevsim-salata.svg" />
+    <Content Include="images\patlicanli-kebap.svg" />
+    <Content Include="images\salgam.svg" />
+    <Content Include="images\soda.svg" />
+    <Content Include="images\su.svg" />
+    <Content Include="images\sutlac.svg" />
+    <Content Include="images\tavuk-durum.svg" />
+    <Content Include="images\tavuk-sis.svg" />
+    <Content Include="images\urfa-durum.svg" />
+    <Content Include="images\urfa-kebap.svg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -174,9 +210,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\AdminLogin.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\Order\Cart.cshtml" />
+    <Content Include="Views\Order\Checkout.cshtml" />
+    <Content Include="Views\Reservation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

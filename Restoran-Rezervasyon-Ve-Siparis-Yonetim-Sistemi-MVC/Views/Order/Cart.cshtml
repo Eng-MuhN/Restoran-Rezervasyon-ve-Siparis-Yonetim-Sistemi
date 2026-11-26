@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Sepetim";
+}
+
+<section class="py-5">
+    <div class="order-card shadow-lg p-4 p-md-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold mb-0">Sepetim</h2>
+            <a href="/Menu/Index" class="btn btn-outline-danger btn-sm">
+                + Menüden Ürün Ekle
+            </a>
+        </div>
+
+        <!-- Seçilen Ürünler Listesi (Backend ekibi foreach ile dolduracak) -->
+        <div class="order-summary-box p-3 p-md-4 rounded-3 mb-4">
+            <div class="d-flex justify-content-between align-items-center py-3 border-bottom border-secondary">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="~/images/adana_kebab.jpeg" alt="Adana Kebap" class="rounded" style="width: 64px; height: 64px; object-fit: cover;" />
+                    <div>
+                        <h5 class="mb-1 text-white">Adana Kebap</h5>
+                        <small class="text-muted">Birim Fiyat: 350 ₺</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-secondary fs-6">1 Adet</span>
+                    <span class="fw-bold fs-5 text-white">350 ₺</span>
+                    <a href="#" class="btn btn-outline-danger btn-sm">Kaldır</a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center py-3 border-bottom border-secondary">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="~/images/kunefe.jpeg" alt="Künefe" class="rounded" style="width: 64px; height: 64px; object-fit: cover;" />
+                    <div>
+                        <h5 class="mb-1 text-white">Künefe</h5>
+                        <small class="text-muted">Birim Fiyat: 180 ₺</small>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-secondary fs-6">1 Adet</span>
+                    <span class="fw-bold fs-5 text-white">180 ₺</span>
+                    <a href="#" class="btn btn-outline-danger btn-sm">Kaldır</a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center pt-4 fs-4 fw-bold text-white">
+                <span>Genel Toplam</span>
+                <span class="text-danger">530 ₺</span>
+            </div>
+        </div>
+
+        <!-- Alt Kısım: Sipariş Ver Sayfasına Yönlendirme -->
+        <div class="d-grid">
+            <a href="/Order/Checkout" class="btn btn-danger btn-lg py-3 fw-bold">
+                Sipariş Ver &rarr;
+            </a>
+        </div>
+    </div>
+</section>

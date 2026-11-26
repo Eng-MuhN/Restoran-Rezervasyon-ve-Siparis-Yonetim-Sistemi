@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Patlıcanlı Kebap</title>
+  <desc id="desc">Kebabçı Necip menüsü için hazırlanmış çizim tarzı yemek görseli.</desc>
+  <defs><filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#1a100d" flood-opacity="0.22"/></filter></defs>
+  <circle cx="256" cy="256" r="228" fill="#b92f2c" opacity="0.07"/><ellipse cx="256" cy="351" rx="194" ry="112" fill="#201916" opacity="0.10"/><ellipse cx="256" cy="330" rx="196" ry="109" fill="#eee5d8"/><ellipse cx="256" cy="322" rx="173" ry="91" fill="#faf4eb" stroke="#d6c8b7" stroke-width="5"/>
+  <g filter="url(#soft-shadow)"><g transform="rotate(-12 256 285)">
+  <path d="M109 286h290" stroke="#d1a05e" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="158" cy="281" rx="31" ry="39" fill="#633a5d"/><path d="M142 263q18-22 35-9" fill="none" stroke="#83a14e" stroke-width="8" stroke-linecap="round"/>
+  <rect x="193" y="247" width="48" height="67" rx="13" fill="#873b28"/><path d="M200 263h31m-30 18h30" stroke="#35211b" stroke-width="5"/>
+  <ellipse cx="270" cy="281" rx="31" ry="39" fill="#66405f"/><path d="M254 263q18-22 35-9" fill="none" stroke="#83a14e" stroke-width="8" stroke-linecap="round"/>
+  <rect x="305" y="247" width="48" height="67" rx="13" fill="#9c452d"/><path d="M312 263h31m-30 18h30" stroke="#35211b" stroke-width="5"/>
+</g>
+<circle cx="139" cy="360" r="15" fill="#d34a38"/><circle cx="374" cy="358" r="16" fill="#77a04c"/></g>
+</svg>
